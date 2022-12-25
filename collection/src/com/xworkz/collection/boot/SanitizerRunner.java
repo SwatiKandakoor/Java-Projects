@@ -20,7 +20,7 @@ public class SanitizerRunner {
 		SanitizerDTO dto8 = new SanitizerDTO(17, "Corvil ", 4d, "red");
 		SanitizerDTO dto9 = new SanitizerDTO(14, "Trust", 12d, "green");
 		SanitizerDTO dto10 = new SanitizerDTO(6, "DCM Shriram ", 5d, "colourless");
-
+		
 		Collection<SanitizerDTO> collections = new LinkedList<SanitizerDTO>();
 		collections.add(dto10);
 		collections.add(dto9);
@@ -97,5 +97,7 @@ public class SanitizerRunner {
 			}
 		}
 		System.out.println("second max :"+secmax);
+		
+		System.out.println("Completed");
 	}
 }
