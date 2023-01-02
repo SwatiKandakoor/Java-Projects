@@ -25,7 +25,7 @@ public class GameDto {
 	public boolean equals(Object obj) {
 		System.out.println("running equals from CalendarDto");
 		if (obj != null) {
-			if (obj instanceof CalendarDto) {
+			if (obj instanceof GameDto) {
 				GameDto dto = (GameDto) obj;
 				if (dto.name.equals(this.name)) {
 					System.out.println("name is matching " + dto.name);

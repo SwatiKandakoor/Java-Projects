@@ -28,6 +28,7 @@ public class HolidayDto {
 				HolidayDto dto = (HolidayDto) obj;
 				if (dto.reasons.equals(this.reasons)) {
 					System.out.println("reasons is matching " + dto.reasons);
+					return true;
 				}
 			}
 		}

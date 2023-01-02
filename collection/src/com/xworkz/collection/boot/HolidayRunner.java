@@ -12,8 +12,9 @@ public class HolidayRunner {
 		HolidayDto dto2=new HolidayDto(7, "Dasara", false);
 		HolidayDto dto3=new HolidayDto(3, "Sakranti", false);
 		HolidayDto dto4=new HolidayDto(1, "shivaratri", true);
+		HolidayDto dto5=new HolidayDto(3, "shivaratri", false);
 		
-		boolean equals=dto.equals(dto4);
+		boolean equals=dto4.equals(dto5);
 		System.out.println(equals);
 		
 		Collection<HolidayDto> col=new LinkedList<HolidayDto>();
@@ -23,7 +24,7 @@ public class HolidayRunner {
 		col.add(dto1);
 		col.add(dto);
 		
-		boolean contains=col.contains(dto4);
+		boolean contains=col.contains(dto5);
 		System.out.println(contains);
 	}
 

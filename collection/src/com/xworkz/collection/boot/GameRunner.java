@@ -13,8 +13,9 @@ public class GameRunner {
 		GameDto dto2=new GameDto("koko","outdoor",9);
 		GameDto dto3=new GameDto("Cricket","outdoor",11);
 		GameDto dto4=new GameDto("kabaddi","outdoor",7);
+		GameDto dto5=new GameDto("kabaddi","outdoor",7);
 		
-		boolean equals=dto.equals(dto4);
+		boolean equals=dto.equals(dto1);
 		System.out.println(equals);
 		
 		Collection<GameDto> col=new LinkedList<GameDto>();
@@ -24,7 +25,7 @@ public class GameRunner {
 		col.add(dto1);
 		col.add(dto);
 		
-		boolean cantains=col.contains(dto4);
+		boolean cantains=col.contains(dto5);
 		System.out.println(cantains);
 		
 		
