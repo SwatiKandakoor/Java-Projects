@@ -29,11 +29,17 @@ public class CompanyCEORunner {
 		System.out.println(companyCEOs);
 		System.out.println("---------print all daugtherdto-------");
 		companyCEOs.stream().forEach(ele -> System.out.println(ele.getDaugtherDTO()));
+		
 		System.out.println("-------print all daugtherdto names-------");
-		companyCEOs.stream().forEach(ele -> System.out.println(ele.getDaugtherDTO().getName()));
+		companyCEOs.stream().forEach(ele -> {
+			if(ele.getDaugtherDTO()!=null)
+			{
+			System.out.println(ele.getDaugtherDTO().getName());
+			}
+			});
 
 		System.out.println("-------total companyCEO------");
-		long total = companyCEOs.stream().filter(ele -> ele.getAge() > 30).count();
+		int total =(int) companyCEOs.stream().filter(ele -> ele.getAge() > 30).count();
 
 		System.out.println(total);
 
