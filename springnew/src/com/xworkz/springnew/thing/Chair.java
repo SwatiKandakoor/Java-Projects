@@ -1,8 +1,8 @@
 package com.xworkz.springnew.thing;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class Chair {
 	public Chair() {
 		System.out.println("running chair....");

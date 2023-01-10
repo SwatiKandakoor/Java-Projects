@@ -1,8 +1,8 @@
 package com.xworkz.springnew.thing;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class Chocolate extends Object {
 	public Chocolate() {
 		System.out.println("running chocolate.....");

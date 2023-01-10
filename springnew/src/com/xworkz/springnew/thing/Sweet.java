@@ -1,8 +1,8 @@
 package com.xworkz.springnew.thing;
 
-import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Component;
 
-@Configuration
+@Component
 public class Sweet {
 	public Sweet() {
 		System.out.println("running sweet......");
