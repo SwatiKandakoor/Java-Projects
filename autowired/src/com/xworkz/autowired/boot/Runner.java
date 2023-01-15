@@ -5,6 +5,7 @@ import java.util.Arrays;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import com.xworkz.autowired.component.Employee;
 import com.xworkz.autowired.component.HardwareShop;
 import com.xworkz.autowired.component.Pencil;
 import com.xworkz.autowired.component.Rubber;
@@ -30,6 +31,10 @@ public class Runner {
 
 		Rubber rubber = context.getBean(Rubber.class);
 		System.out.println(rubber);
+		
+		Employee employee=context.getBean(Employee.class);
+		System.out.println(employee);
 	}
+	
 
 }
