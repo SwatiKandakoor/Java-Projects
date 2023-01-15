@@ -13,24 +13,24 @@ public class Rubber {
 	@Qualifier("rubberType")
 	private String type;
 	@Autowired
-	@Qualifier("rubberPrice")
+	@Qualifier("rubberprice")
 	private double price;
 	@Autowired
 	@Qualifier("rubberColor")
 	private String color;
 	@Autowired
+	@Qualifier("rubbershape")
 	private String shape;
 	@Autowired
-	@Qualifier("rubberStolen")
+    @Qualifier("rubberStolen")
 	private boolean stolen;
 	@Autowired
 	private int size;
-	
+
 	@Override
 	public String toString() {
 		return "Rubber [name=" + name + ", type=" + type + ", price=" + price + ", color=" + color + ", shape=" + shape
 				+ ", stolen=" + stolen + ", size=" + size + "]";
 	}
-	
 
 }

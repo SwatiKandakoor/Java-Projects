@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Employee {
 	@Autowired
-	@Qualifier("name")
+	@Qualifier("ename")
 	private String name;
 	@Autowired
 	@Qualifier("eAge")
@@ -19,15 +19,19 @@ public class Employee {
 	@Qualifier("ePrice")
 	private double price;
 	@Autowired
+	@Qualifier("experience")
 	private int experience;
 	@Autowired
 	@Qualifier("eTestingRole")
 	private boolean testingRole;
 	@Autowired
+	@Qualifier("goodEmployee")
 	private boolean goodEmployee;
 	@Autowired
 	@Qualifier("eCompanyArea")
 	private double companyArea;
+	@Autowired
+	@Qualifier("phoneNo")
 	private double phoneNo;
 
 	@Override

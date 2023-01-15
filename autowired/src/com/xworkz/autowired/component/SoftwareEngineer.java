@@ -15,7 +15,7 @@ public class SoftwareEngineer {
 	@Qualifier("softwareEngineerCompanyName")
 	private  String companyName;
 	@Autowired
-	@Qualifier("softwareEngineerExperience")
+	//@Qualifier("softwareEngineerExperience")
 	private int experience;
 	@Override
 	public String toString() {

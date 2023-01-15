@@ -10,6 +10,7 @@ public class Pencil {
 	@Qualifier("pencilName")
 	private String name;
 	@Autowired
+	@Qualifier("ptype")
 	private String type;
 	@Autowired
 	private double price;
@@ -20,13 +21,13 @@ public class Pencil {
 	@Qualifier("pencilSharp")
 	private boolean sharp;
 	@Autowired
-
-	private boolean stole;
+	@Qualifier("pstolen")
+	private boolean stolen;
 
 	@Override
 	public String toString() {
 		return "Pencil [name=" + name + ", type=" + type + ", price=" + price + ", color=" + color + ", sharp=" + sharp
-				+ ", stole=" + stole + "]";
+				+ ", stolen=" + stolen + "]";
 	}
 
 }

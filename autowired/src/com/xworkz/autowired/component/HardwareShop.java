@@ -14,9 +14,10 @@ public class HardwareShop {
 	@Qualifier("id")
 	private int id;
 	@Autowired
-	@Qualifier("name")
+	@Qualifier("hname")
 	private String name;
 	@Autowired
+	@Qualifier("gstNo")
 	private int gstNo;
 	@Autowired
 	@Qualifier("owName")

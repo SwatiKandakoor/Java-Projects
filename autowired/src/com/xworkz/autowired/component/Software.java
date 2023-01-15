@@ -23,15 +23,11 @@ public class Software {
 	@Autowired
 	@Qualifier("softwareFree")
 	private boolean free;
-	
-	
-	
+
 	@Override
 	public String toString() {
 		return "Software [name=" + name + ", version=" + version + ", developer=" + developer + ", data=" + data
 				+ ", free=" + free + "]";
 	}
-	
-	
 
 }
