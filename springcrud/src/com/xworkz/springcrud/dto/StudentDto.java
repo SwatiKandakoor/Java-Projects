@@ -19,7 +19,7 @@ import lombok.ToString;
 //@Data
 @ToString
 @NoArgsConstructor
-public class StudentDto {
+public class StudentDto extends AbstractAdultDto {
 	@NonNull
 	@NotNull(message = "Student name cannot be null")
 	@Size(min = 3, max = 20, message = "Student name is invalid,should be more than 2")
