@@ -10,11 +10,11 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-@Data
+//@Data
 @NoArgsConstructor
-//@ToString
-//@Setter
-//@Getter
+@ToString
+@Setter
+@Getter
 @AllArgsConstructor
 public class AbstractAdultDto implements Serializable {
 

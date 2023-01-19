@@ -35,6 +35,7 @@ public class SoldierServiceImpl implements SoldierService {
 			System.err.println("not validation");
 
 			validate.forEach(e -> System.out.println(e.getMessage()));
+			return false;
 		} else {
 			boolean saved = this.soldierRepo.save(dto);
 			if (dto != null) {

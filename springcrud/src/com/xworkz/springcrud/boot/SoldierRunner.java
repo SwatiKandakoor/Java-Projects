@@ -8,7 +8,7 @@ import com.xworkz.springcrud.service.SoldierServiceImpl;
 
 public class SoldierRunner {
 	public static void main(String[] args) {
-		SoldierDto dto = new SoldierDto(1, "Naveen", "Ilkalra", "FirstRank");
+		SoldierDto dto = new SoldierDto(1, "Naveen", "Ilkal", "FirstRank");
 		SoldierServiceImpl service = new SoldierServiceImpl();
 		SoldierRepoImpl repo = new SoldierRepoImpl();
 		service.setSoldierRepo(repo);
